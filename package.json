@@ -1,7 +1,7 @@
 {
-  "name": "my-vscode-extension",
-  "displayName": "My VSCode Extension",
-  "description": "A custom VSCode extension",
+  "name": "jupyter-run-markdown-cellgroup",
+  "displayName": "Jupyter Run Markdown Cellgroup",
+  "description": "Run Jupyter notebook sections in specific markdown sections with a hotkey.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.60.0"
@@ -10,14 +10,22 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:myExtension.helloWorld"
+    "onCommand:extension.runMarkdownCellgroup"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "myExtension.helloWorld",
-        "title": "Hello World"
+        "command": "extension.runMarkdownCellgroup",
+        "title": "Run Jupyter Markdown Cellgroup"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.runMarkdownCellgroup",
+        "key": "ctrl+alt+g",
+        "mac": "ctrl+cmd+g",
+        "when": "notebookEditorFocused"
       }
     ]
   },
@@ -30,16 +38,14 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
+    "@types/node": "^14.14.37",
     "@types/vscode": "^1.60.0",
-    "@types/glob": "^7.1.3",
-    "@types/mocha": "^8.2.2",
-    "@types/node": "14.x",
-    "eslint": "^7.27.0",
-    "@typescript-eslint/eslint-plugin": "^4.26.0",
-    "@typescript-eslint/parser": "^4.26.0",
-    "glob": "^7.1.7",
-    "mocha": "^8.4.0",
-    "typescript": "^4.3.2",
-    "vscode-test": "^1.5.2"
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.25.0",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@vscode/vsce": "^3.1.1"
   }
 }
