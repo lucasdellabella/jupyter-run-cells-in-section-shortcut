@@ -1,6 +1,6 @@
 {
-  "name": "jupyter-run-markdown-cellgroup",
-  "displayName": "Jupyter Run Markdown Cellgroup",
+  "name": "jupyter-run-notebook-section",
+  "displayName": "Jupyter Run Notebook Section",
   "description": "Run Jupyter notebook sections in specific markdown sections with a hotkey.",
   "version": "0.0.1",
   "engines": {
@@ -10,19 +10,19 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.runMarkdownCellgroup"
+    "onCommand:extension.runNotebookSection"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "extension.runMarkdownCellgroup",
+        "command": "extension.runNotebookSection",
         "title": "Run Jupyter Markdown Cellgroup"
       }
     ],
     "keybindings": [
       {
-        "command": "extension.runMarkdownCellgroup",
+        "command": "extension.runNotebookSection",
         "key": "ctrl+alt+g",
         "mac": "ctrl+cmd+g",
         "when": "notebookEditorFocused"

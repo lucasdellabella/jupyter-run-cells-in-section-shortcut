@@ -4,7 +4,7 @@ import { NotebookCell, NotebookCellKind, NotebookEditor } from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand(
-    "extension.runMarkdownCellgroup",
+    "extension.runNotebookSection",
     async () => {
       const editor = vscode.window.activeNotebookEditor;
       if (!editor) {
