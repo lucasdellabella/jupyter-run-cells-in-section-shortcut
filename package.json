@@ -1,5 +1,9 @@
 {
   "name": "jupyter-run-notebook-section",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasdellabella/jupyter-run-cells-in-section-shortcut.git"
+  },
   "displayName": "Jupyter Run Notebook Section",
   "description": "Run Jupyter notebook sections in specific markdown sections with a hotkey.",
   "version": "0.0.1",
