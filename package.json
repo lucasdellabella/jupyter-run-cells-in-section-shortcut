@@ -7,7 +7,7 @@
   "displayName": "Jupyter Run Notebook Section",
   "description": "Run Jupyter notebook sections in specific markdown sections with a hotkey.",
   "publisher": "LucasDellaBella",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -17,6 +17,7 @@
   "activationEvents": [
     "onCommand:extension.runNotebookSection"
   ],
+  "icon": "assets/jupyter-logo-300.png",
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
