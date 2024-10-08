@@ -1,15 +1,18 @@
 # Jupyter Notebook Section Runner
 
+For rapid execution of specific notebook sections.
+
 This VSCode extension allows you to run a specific section or subsection of your Jupyter notebook via keyboard shortcut.
 
-## Installation
+## Usage Rules
 
-1. Open VSCode
-2. Go to the Extensions view (Ctrl+Shift+X or Cmd+Shift+X)
-3. Search for "Jupyter Notebook Section Runner"
-4. Click Install
+Keep your markdown headers organized for this to work correctly!
 
-## Usage / Example
+1. 1 header to a cell
+2. Put the header at the top of the cell
+3. Don't skip levels in the header hierarchy (No H1 -> H3).
+
+## Example
 
 ```
 1. Introduction
